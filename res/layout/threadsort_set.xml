@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.discuz.source.widget.SiteNavbar android:id="@id/site_navbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/dateline_sort" android:background="@drawable/iphone_more_bg_top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="按发布时间排序" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/dateline_sort_icon" android:background="@drawable/icon_toast_success" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lastpost_sort" android:background="@drawable/iphone_more_bg_bottom" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:text="按回复时间排序" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/lastpost_sort_icon" android:background="@drawable/icon_toast_success" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/siteview_more_logout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ffcccccc" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="进入版块后,主题列表的排序规则." android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffcccccc" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="如站点未开启该功能,则该设置会失效." android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

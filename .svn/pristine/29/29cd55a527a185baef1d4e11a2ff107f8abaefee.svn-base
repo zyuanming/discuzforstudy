@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/sitelist_item_info" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/sitelist_item_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_toLeftOf="@id/notifytoggle_item" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/shadowText" />
+    <CheckBox android:gravity="center" android:id="@id/notifytoggle_item" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

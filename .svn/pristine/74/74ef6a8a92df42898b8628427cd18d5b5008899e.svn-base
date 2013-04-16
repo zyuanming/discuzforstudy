@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tab_index_mythread_list_isread" android:background="@drawable/listview_icon_default_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ffff5500" android:id="@id/tab_index_mythread_list_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="11.0dip" android:textColor="@drawable/listview_item_textcolor_description_selector" android:id="@id/tab_index_mythread_list_lastposter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/tab_index_mythread_list_lastposter_line" android:background="@drawable/listview_span_line_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="11.0dip" android:textColor="@drawable/listview_item_textcolor_description_selector" android:id="@id/tab_index_mythread_list_lastpost" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:background="@drawable/listview_span_line_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/icon_small_replies_selector" />
+            <TextView android:textSize="11.0dip" android:textColor="@drawable/listview_item_textcolor_description_selector" android:id="@id/tab_index_mythread_list_replies" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/icon_small_views_selector" />
+            <TextView android:textSize="11.0dip" android:textColor="@drawable/listview_item_textcolor_description_selector" android:id="@id/tab_index_mythread_list_views" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/threadlist_have_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/image_s" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

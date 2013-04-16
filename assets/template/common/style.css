@@ -1,0 +1,95 @@
+	*{word-wrap: break-word;}
+	H1,H2,H3,H4,DT,DD,P{ margin:0; padding:0;}
+	UL, LI { list-style:none; margin:0; padding:0;}
+	a,a:link,a:active,a:visited,a:hover{ text-decoration:none; }
+	.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }
+	.z { float:left;}
+	.y {float:right;}
+	.xg1 { color: #999; }
+	
+	.xs6 { font-size: 60%;}
+	.xs7 { font-size: 70%;}
+	.xs8 { font-size: 80%; }
+	.xs9 { font-size: 90%; }
+	.xs0 { font-size: 100%; }
+	.xs1 { font-size: 110%; }
+	.xs2 { font-size: 120%; }
+	body{ margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0); background:#FFF; font-size:100%;}
+	
+	.shadowtext {text-shadow: 0px 1px 1px #fff;}
+	.shadowtext_black {text-shadow: 0px -1px 1px #000000;}
+	.shadowtext_black_bottom { text-shadow:0px 2px 1px #000000;}
+	
+	.radius_border {-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 4px;}
+	
+	.txt { border: 1px #dedbde solid; font-size:100%; width: 94%; -webkit-box-shadow: 0px 0px 5px #efefef inset; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px;}
+	.button{ margin-bottom: 4px; border: 1px #6e90b1 solid; padding: 12px 0; background: -webkit-gradient(linear, 0 0, 0 100%, from(#93b3d2), to(#84a6c6)); display:inline-block; width:99%; color: #FFF; font-size: 110%; text-align:center; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; -webkit-box-shadow: 2px 2px 4px #cccccc; }
+	.button_touch { background: -webkit-gradient(linear, 0 0, 0 100%, from(#9cc36b), to(#de7d10)); border: 1px #9cc36b solid; -webkit-box-shadow: none;}
+	
+	.touchhover_bg { color:#FFFFFF; background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffae21), to(#de7d10)); text-shadow: 0px 1px 1px #fff;}
+		.touchhover_bg .forum .forumname, .touchhover_bg .forum .forumname .todayposts{ color:#FFF; text-shadow: none;}
+	
+	.loading { padding: 30px; line-height: 32px; text-align: center; color:#4c5e6e; }
+
+	/*postlist*/
+	.postlistbody {}
+	
+	.postlistbody #threadsubject {}
+	.postlistbody #threadsubject .threadsubject_body{padding: 12px 9px; line-height:22px; font-size: 110%; color: #5f5b5f;}
+	.postlistbody #threadsubject #subjectbox{padding: 12px 9px; line-height:22px; font-size: 110%; color: #5f5b5f;}
+	.postlist {}
+	.postlist .postsubject { padding: 8px 3px; border-bottom: 1px #d5d5d5 dashed; font-size: 110%; color: #333;}
+	
+	.postlist .postnode { background: #ffffff; padding-left:6px; padding-right:6px; padding-bottom:8px; margin-bottom: 1px; font-size:95%; color:#464646; }
+	.postlist .postnodetouch { background:#f9f9f9; }
+	.postlist .first {}
+	.postlist .postnode .author {padding: 10px 4px 2px 0; font-size: 100%;  margin-bottom:6px; }
+		.postnode .author .avatar img { padding: 1px; border: 1px #cecece solid; background: url(file:///android_asset/images/sitestyle/avatar.png)  50% 50% no-repeat;;}
+		.postnode .author .profile { margin-left: 2px; padding: 2px; color:#2c2c2c; line-height: 18px; }
+		.postnode .author .profile .dateline{color:#999999;}
+		.postnode .postno{ margin-right:4px; line-height: 30px;}
+	
+	/*triangle*/
+    .message{position:relative;color:#333333;font-size:16px;word-wrap: break-word; word-break: break-all; background-color: #efefef; padding: 12px;border:1px solid #cfcfcf;line-height:24px;}
+    .triangle {position:absolute;left:8px;top:-9px;width:0; height:0; border-width:0 9px 9px; border-style:solid; border-color:transparent transparent #cfcfcf;}
+    .inner_triangle {position:absolute;left:9px;top:-8px;width:0; height:0; border-width:0 8px 9px; border-style:solid; border-color:transparent transparent #efefef;}
+	.postlist .postnode .messagetouch { background:#e4e4e4; color:#222222;}
+	.postlist .postnode .messagetouch .inner_triangle{border-color:transparent transparent #e4e4e4;}
+	/*end triangle*/
+	.postlist .postnode .message img{ max-width: 280px;}
+
+	.postlist .postnode .postnodeimagebox { display:inline-block; margin-top: 2px; }
+	.postlist .postnode .postnodeimage { padding: 3px; background: #FFF url("file:///android_asset/images/sitestyle/loading_image.gif") 50% 50% no-repeat; border: 1px #e4e4e4 solid; }
+	.postlist .postnode .downloadfile { margin: 3px 0; padding: 7px 5px; border: 1px #e4e4e4 solid; background: #fff; color:#84a6c6;}
+	.postlist .postnode .pstatus{ font-style: normal; font-size: 80%; color: #999; }
+	.postlist .postnode .lock { padding:4px; text-align: center; color: #999; }
+		.postlist .postnode .attachmentlist {padding: 3px 0px;}
+			.postlist .postnode .attachmentlist .attachtitle { padding-bottom:2px; color: #FF5500; }
+			.postlist .postnode .downloadfile .attachdesc { color: #999; font-size: 80%;}
+	
+	.postlist .quote { background: url("file:///android_asset/images/sitestyle/icon_quote_s.png") no-repeat 2px 1px; }
+	.postlist .quote blockquote { background: url("file:///android_asset/images/sitestyle/icon_quote_e.png") no-repeat 100% 100%; margin:0 6px 0 6px; padding: 0 15px 2px 16px; line-height:1.2; font-size: 90%;}
+	.postlist .locked { background: url("file:///android_asset/images/sitestyle/locked.gif") no-repeat 1px 1px; padding: 0 0 0 18px; color:#999999;}
+	.postlist .locked a{ color:#00F;}
+	
+	.nextpagebtn_untouch { padding:14px 3px; text-align:center; background:#FFFFFF; font-size: 110%; color:#666; }
+	.nextpagebtn_touch{ padding:14px 3px; text-align:center; background: -webkit-gradient(linear, 0 0, 0 100%, from(#ebeaeb), to(#efefef)); font-size: 110%;}
+	
+	.showmessage { margin-top: 50px; padding: 20px;  background: #FFF; }
+	.showmessage p { margin: 10px; font-size: 100%; }
+	.showmessage .messagebody { font-size: 110%; }
+	.showmessage .title { margin: 10px; padding-bottom: 10px; border-bottom: 1px #eeeeee dashed; font-size: 110%;  color:#555555; }
+	.showmessage_btn { border: 1px #6e90b1 solid; padding: 5px 0; background: -webkit-gradient(linear, 0 0, 0 100%, from(#93b3d2), to(#84a6c6)); display: block; color: #FFF; font-size: 110%; text-align:center; }
+			
+	.sitewarning { margin: 30px; padding: 20px; background: #ececef; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; line-height: 30px; font-size: 100%; color: #666666; }
+		.sitewarning .msg { margin-bottom: 4px;}
+	
+	.pageline { padding-right:9px; background: url("file:///android_asset/images/sitestyle/pageline_bg.png") repeat-x 0 0; text-align:center; font-size: 75%; color:#999999; height:15px; padding-top:3px; padding-bottom:2px; margin-top:10px; margin-bottom:2px;}
+	.jammer{ display:none; }
+	.threadsort { margin:0; padding:0;font-weight:400;text-align:left;font-size:12px;border-collapse:collapse;}
+    .threadsort caption { background:#e5edf2;border-top:1px solid #C2D5E3;border-bottom:1px solid #C2D5E3;font-size:14px;font-weight:700;text-align:left;padding:6px 2px;}
+    .threadsort th,.threadsort td {border-bottom:1px solid #C2D5E3;padding:4px 0;}
+    .threadsort th {width:70px;}

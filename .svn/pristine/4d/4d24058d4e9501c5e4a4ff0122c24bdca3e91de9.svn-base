@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/site_navbar"
+        android:paddingBottom="16.0dip" />
+
+    <View
+        android:id="@id/block_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <!-- 右下角的动画菜单，三个按钮：首页、板块、我的 -->
+
+    <RelativeLayout
+        android:id="@id/sector_menu"
+        android:layout_width="200.0dip"
+        android:layout_height="200.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-15.5dip"
+        android:layout_marginRight="-15.5dip"
+        android:background="@drawable/sector_menu_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@id/forum_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14.169983dip"
+            android:layout_marginRight="85.5dip"
+            android:background="@null"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:src="@drawable/all_forum_btn_selector" />
+
+        <ImageButton
+            android:id="@id/recommend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="72.82999dip"
+            android:layout_marginRight="72.82999dip"
+            android:background="@null"
+            android:src="@drawable/recommend_btn_selector" />
+
+        <ImageButton
+            android:id="@id/my_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="89.5dip"
+            android:layout_marginRight="18.0dip"
+            android:background="@null"
+            android:padding="12.0dip"
+            android:src="@drawable/my_btn_selector" />
+
+        <ImageView
+            android:id="@id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="160.0dip"
+            android:layout_marginRight="20.0dip"
+            android:src="@drawable/red_point"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/sector_menu_main_btn"
+        android:layout_width="60.0dip"
+        android:layout_height="57.329987dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-8.0dip"
+        android:layout_marginRight="-5.0dip"
+        android:src="@drawable/sector_menu_main_btn" />
+
+</RelativeLayout>

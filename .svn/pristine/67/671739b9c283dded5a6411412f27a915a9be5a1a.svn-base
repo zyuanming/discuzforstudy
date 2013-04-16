@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/scrollBottom" android:background="@color/list_line" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/scrollTop" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <include layout="@layout/header_box" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/center_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/forumindexbottom" android:layout_below="@id/header_box" />
+        <View android:id="@id/block_view" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/forumindexbottom" android:layout_below="@id/header_box" />
+        <LinearLayout android:id="@id/forumindexbottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

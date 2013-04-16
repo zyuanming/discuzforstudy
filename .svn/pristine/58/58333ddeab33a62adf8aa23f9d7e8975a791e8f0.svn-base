@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffdedede"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom|left|center" >
+
+        <TextView
+            android:id="@id/pull_txt"
+            style="@style/shadowText"
+            android:layout_width="120.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1.0dip"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ff777777"
+            android:textSize="16.0dip" />
+
+        <ImageView
+            android:id="@id/pull_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pull_txt"
+            android:layout_toLeftOf="@id/pull_txt"
+            android:src="@drawable/arrow_down"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@id/pull_loading"
+            style="@style/LoadingPopupCircleAnimationSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pull_txt"
+            android:layout_marginTop="18.0dip"
+            android:layout_toLeftOf="@id/pull_txt"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

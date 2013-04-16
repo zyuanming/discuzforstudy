@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@id/displayListLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/site_navbar" />
+
+    <View
+        android:id="@id/block_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/buttons_list"
+        android:layout_width="51.0dip"
+        android:layout_height="200.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48.0dip"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingRight="4.0dip" >
+
+        <Button
+            android:id="@id/fav_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/more_btn_list_btn_selector"
+            android:text="收藏"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/new_thread_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="48.0dip"
+            android:background="@drawable/more_btn_list_btn_selector"
+            android:text="发帖"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

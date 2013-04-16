@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DiscuzActivityBox" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.discuz.source.widget.SiteNavbar android:id="@id/site_navbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:id="@id/sms_main_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/return_message" android:layout_below="@id/site_navbar" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/return_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/sub_return_message" android:background="@drawable/reply_submit_selector" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:text="回复" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/shadowText" />
+        <EditText android:textSize="15.0dip" android:textColor="#ff333333" android:textColorHint="#ffa5a5a5" android:id="@id/edit_message" android:background="@drawable/reply_fast_input_bg" android:paddingLeft="7.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="回复" android:layout_toLeftOf="@id/sub_return_message" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

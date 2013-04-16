@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:orientation="vertical" android:id="@id/strong_recommend_tags" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffd1fc9e" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_x="70.0dip" android:layout_y="30.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/sitetag1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无站点信息" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffadc1" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_x="180.0dip" android:layout_y="65.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/sitetag2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无站点信息" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff93c8ff" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_x="20.0dip" android:layout_y="90.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/sitetag3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无站点信息" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#fff9f378" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_x="160.0dip" android:layout_y="120.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/sitetag4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无站点信息" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffc781" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_x="50.0dip" android:layout_y="150.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/sitetag5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无站点信息" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</AbsoluteLayout>

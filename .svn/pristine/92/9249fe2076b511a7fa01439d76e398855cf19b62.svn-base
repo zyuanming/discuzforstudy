@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <include layout="@layout/header_box" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/smsshow_view" android:background="@drawable/about_bg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

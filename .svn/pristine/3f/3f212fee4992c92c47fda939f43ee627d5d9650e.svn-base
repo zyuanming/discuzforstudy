@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:background="@color/audio_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/audio_record_text" android:gravity="center" android:id="@id/record_show" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_record_text" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/audio_btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

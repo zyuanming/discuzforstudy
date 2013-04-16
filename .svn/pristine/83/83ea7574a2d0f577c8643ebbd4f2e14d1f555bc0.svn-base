@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="7.0dip" >
+
+    <TextView
+        android:id="@id/siteview_forumindex_categoryname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:textColor="#ff787878"
+        android:textSize="17.0sp" />
+
+</RelativeLayout>

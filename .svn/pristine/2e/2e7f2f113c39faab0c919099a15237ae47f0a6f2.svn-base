@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:background="@drawable/sitelist_bg_repeat" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:deezapps="http://schemas.android.com/apk/res/net.discuz">
+    <LinearLayout android:orientation="horizontal" android:id="@id/uploadfile_header" android:background="@drawable/searchsite_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textColor="#ff000000" android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="文件" paddingTop="10dip" />
+        <TextView android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="类型" paddingTop="10dip" />
+        <TextView android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="上传进度" paddingTop="10dip" />
+        <TextView android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="状态" paddingTop="10dip" paddingBottom="10dip" />
+    </LinearLayout>
+    <ListView android:orientation="vertical" android:id="@id/uploadfile_listview" android:background="@color/listview_unselect" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/uploadfile_header" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/uploadfile_listview" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0dip" android:id="@id/sendButton" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="@string/imageuploadsend" />
+        <Button android:textSize="20.0dip" android:id="@id/sendButton_cancel" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="60.0dip" android:text="@string/imageuploadsend_cancel" />
+    </LinearLayout>
+</RelativeLayout>

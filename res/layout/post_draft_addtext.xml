@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:id="@id/header_box"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip" >
+
+        <include layout="@layout/header_box" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/addtext_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_box"
+        android:padding="10.0dip" >
+
+        <EditText
+            android:id="@id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入点什么吧"
+            android:textColor="#ff333333"
+            android:textColorHint="#ff999999"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

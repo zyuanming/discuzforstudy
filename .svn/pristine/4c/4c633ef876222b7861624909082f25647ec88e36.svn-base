@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <include layout="@layout/header_box" />
+    </LinearLayout>
+    <net.discuz.source.widget.DWebView android:id="@id/custom_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_box" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <include layout="@layout/loading" />
+    </LinearLayout>
+</RelativeLayout>

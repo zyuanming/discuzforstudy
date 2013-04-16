@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/umeng_feedback_rootId" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nav_box" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <TextView android:id="@id/umeng_feedback_goback_btn" android:background="@drawable/button_post_bg_selector" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/umeng_feedback_conversation_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="反馈问题" />
+        <ImageButton android:id="@id/umeng_feedback_see_list_btn" android:background="@drawable/umeng_feedback_see_list_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/search_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nav_box" />
+    <EditText android:textColor="#ff737373" android:gravity="top" android:id="@id/umeng_feedback_content" android:paddingLeft="9.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="2.0dip" android:hint="请输入您的反馈意见" android:maxEms="10" android:ems="10" android:minEms="10" android:layout_weight="1.0">
+        <requestFocus />
+    </EditText>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="2.0dip">
+        <Spinner android:id="@id/umeng_feedback_age_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Spinner android:id="@id/umeng_feedback_gender_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/umeng_feedback_age_spinner" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/umeng_feedback_submit" android:background="@drawable/button_done_bg_selector" android:layout_width="64.0dip" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:text="提交" android:layout_alignBaseline="@id/umeng_feedback_age_spinner" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

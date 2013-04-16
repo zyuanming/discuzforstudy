@@ -1,0 +1,8 @@
+﻿<!--{template loading/header}-->
+<div class="sitewarning">
+	<div class="msg">
+    	<!--{closedreason}-->
+    </div>
+    <button class="button" onClick="javascript:Discuz.interfaceBackToSiteList();">杩??惰?琛?/button>
+</div>
+<!--{template common/footer}-->

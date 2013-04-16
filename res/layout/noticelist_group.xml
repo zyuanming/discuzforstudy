@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/noticelist_group_info" android:background="@drawable/notice_bg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notice_item_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_nosite" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="left" android:id="@id/notice_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="游侠网" android:maxLines="1" android:layout_toLeftOf="@id/notice_clear" android:layout_toRightOf="@id/notice_item_icon" android:layout_centerVertical="true" style="@style/shadowText" />
+    <ImageView android:id="@id/notice_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/noticelist_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

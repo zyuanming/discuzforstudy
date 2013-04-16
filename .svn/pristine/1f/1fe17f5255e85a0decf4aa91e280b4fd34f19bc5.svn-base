@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="好友列表" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottem" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/bottem_center" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/sms_friends_sub" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="完成" android:layout_toLeftOf="@id/bottem_center" />
+        <Button android:id="@id/sms_friends_cancel" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="取消" android:layout_toRightOf="@id/bottem_center" />
+    </RelativeLayout>
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottem" android:layout_below="@id/top">
+        <ListView android:id="@id/sms_friends_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/list_line" android:dividerHeight="1.0px" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+    <ListView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

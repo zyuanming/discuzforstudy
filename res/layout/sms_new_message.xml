@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DiscuzActivityBox" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <net.discuz.source.widget.SiteNavbar android:id="@id/site_navbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/site_navbar">
+        <LinearLayout android:id="@id/show_friends" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/sms_new_message_friends" android:background="@drawable/icon_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <AutoCompleteTextView android:textSize="17.0sp" android:ellipsize="end" android:id="@id/sms_new_message_receiver" android:background="@null" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:hint="收件人" android:singleLine="true" android:layout_toLeftOf="@id/show_friends" />
+        <View android:id="@id/divider_2" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/sms_new_message_receiver" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollView" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/center"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/sms_new_message_friends_LinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:ellipsize="end" android:gravity="left" android:id="@id/sms_new_message_friends_show_friends" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <EditText android:textSize="17.0sp" android:gravity="top" android:id="@id/sms_new_message_information" android:background="@null" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="内容" android:layout_below="@id/scrollView" />
+    <ListView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

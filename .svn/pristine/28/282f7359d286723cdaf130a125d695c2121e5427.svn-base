@@ -1,0 +1,8 @@
+﻿<!--{template loading/header}-->
+<div class="sitewarning">
+	<div class="msg">
+		<!--{message}-->
+    </div>
+    <button class="button" onClick="javascript:Discuz.interfaceGoBack();">杩?</button>
+</div>
+<!--{template common/footer}-->

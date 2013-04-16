@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="6.0dip" >
+
+    <ScrollView
+        android:id="@id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:text="我喜欢的"
+                    android:textColor="#ff999999" />
+
+                <GridView
+                    android:id="@id/favorite_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5.0dip"
+                    android:listSelector="@drawable/alpha_bg"
+                    android:numColumns="4"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:text="我喜欢的"
+                    android:textColor="#ff999999"
+                    android:textSize="20.0dip"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@id/history_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawSelectorOnTop="true"
+                    android:horizontalSpacing="5.0dip"
+                    android:listSelector="@drawable/alpha_bg"
+                    android:numColumns="4"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@id/setting_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/scrollview"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="9.0dip"
+        android:layout_marginRight="11.0dip"
+        android:background="@drawable/setting_icon"
+        android:clickable="true" />
+
+</RelativeLayout>

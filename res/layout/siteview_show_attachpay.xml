@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg_gray_half_screen" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/pay_title" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/attachpay_title" android:layout_alignParentLeft="true" style="@style/shadowText" />
+            <Button android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/btn_close" android:background="@drawable/close_gray_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" style="@style/shadowText_black" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:id="@id/pay_name_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="名称" style="@style/shadowText" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff666666" android:id="@id/pay_name" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="发布者" style="@style/shadowText" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff666666" android:id="@id/pay_author" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:id="@id/pay_price_name" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="消费积分" style="@style/shadowText" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff666666" android:id="@id/pay_price" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="消费后剩余" style="@style/shadowText" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff666666" android:id="@id/pay_balance" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="20.0dip" android:textColor="#ff333333" android:id="@id/pay_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="立即购买" style="@style/shadowText" />
+</LinearLayout>

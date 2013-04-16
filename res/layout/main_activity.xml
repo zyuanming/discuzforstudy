@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat"
+    android:paddingTop="8.0dip" >
+
+    <RadioGroup
+        android:id="@id/tab_btns"
+        android:layout_width="118.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8.0dip"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/radio_button_left"
+            style="@style/TabBtn"
+            android:text="推荐" />
+
+        <View
+            android:id="@id/radio_button_holder"
+            android:layout_width="18.0dip"
+            android:layout_height="fill_parent" />
+
+        <RadioButton
+            android:id="@id/radio_button_right"
+            style="@style/TabBtn"
+            android:text="足迹" />
+    </RadioGroup>
+
+    <View
+        android:id="@id/tab_btn_line_left"
+        android:layout_width="50.0dip"
+        android:layout_height="2.0dip"
+        android:layout_alignLeft="@id/tab_btns"
+        android:layout_below="@id/tab_btns"
+        android:layout_marginTop="2.0dip"
+        android:background="#ff3db7ea"
+        android:visibility="gone" />
+
+    <View
+        android:id="@id/tab_btn_line_right"
+        android:layout_width="50.0dip"
+        android:layout_height="2.0dip"
+        android:layout_alignRight="@id/tab_btns"
+        android:layout_below="@id/tab_btns"
+        android:layout_marginTop="2.0dip"
+        android:background="#ff3db7ea"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10.669983dip" >
+
+        <ImageButton
+            android:id="@id/notice_btn"
+            android:layout_width="47.329987dip"
+            android:layout_height="32.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/button_main_bg_selector"
+            android:src="@drawable/notice_null" />
+
+        <ImageButton
+            android:id="@id/search_btn"
+            android:layout_width="47.329987dip"
+            android:layout_height="32.0dip"
+            android:layout_toRightOf="@id/notice_btn"
+            android:background="@drawable/button_main_bg_selector"
+            android:src="@drawable/main_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tab_btns"
+        android:layout_marginTop="4.0dip" />
+
+</RelativeLayout>

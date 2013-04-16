@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Discuz! Message</title>
+</head>
+<style>
+	body{ padding-top:3em; text-align: center; font-size: 1.4em;  }
+	#errbody{ width: 100%; margin-top: 1em; color:#999999;}
+</style>
+<script language="javascript">
+var DZ = window.DZ;
+</script>
+<body>
+<div><img src="images/error_bg.png" /></div>
+<div id="errbody">
+</div>
+<div style="padding-top:10px;">
+	<span id="loginbox" onClick="javascript:DZ.toLogin();" style="display:none; background:#bca84a; color:#FFFFFF; font-size:22px; padding: 14px 20px; border: 1px #999999 solid; border-radius: 15px; margin: 10px auto; width:100px;">
+		?诲?
+	</span>
+</div>
+<script language="javascript">
+	function showerr(errorstr) {
+		var message = DZ.geterrormessage();
+		document.getElementById("errbody").innerHTML = message;
+	}
+	function needlogin() {
+		var isneedlogin = DZ.getneedlogin();
+		if(isneedlogin == "1") {
+			document.getElementById("loginbox").style.display = "block";
+		} else {
+			document.getElementById("loginbox").style.display = "none";
+		}
+	}
+	showerr();
+	needlogin();
+</script>
+</body>
+</html>

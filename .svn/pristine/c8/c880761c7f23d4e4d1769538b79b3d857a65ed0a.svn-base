@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/sitelist_item_info" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/sitelist_item_info_name" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="ABCDEFG" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/shadowText" />
+    <ImageView android:id="@id/default_jumpsitelist_item_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_toast_success" android:layout_alignParentRight="true" />
+</RelativeLayout>

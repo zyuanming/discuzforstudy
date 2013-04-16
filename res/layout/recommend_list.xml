@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/recommend_group"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3.0dip" >
+
+    <RelativeLayout
+        android:id="@id/top_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:id="@id/recommend_groupname"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="艺术"
+            android:textColor="#ff787878"
+            android:textSize="19.0sp" />
+
+        <TextView
+            android:id="@id/recommend_groupall"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/all_arrow"
+            android:text="全部 "
+            android:textColor="#ffadadad"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/all_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/all_arrow"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@id/horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_relative"
+        android:layout_marginLeft="5.3299866dip"
+        android:layout_marginTop="5.0dip"
+        android:fadingEdgeLength="0.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@id/recommend_items"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0" />
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:layout_below="@id/horizontal"
+        android:layout_marginLeft="13.329987dip"
+        android:layout_marginRight="13.329987dip"
+        android:layout_marginTop="13.0dip"
+        android:background="@drawable/recommend_line" />
+
+</RelativeLayout>

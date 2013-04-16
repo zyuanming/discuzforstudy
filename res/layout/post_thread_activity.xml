@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@id/postdraft_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/site_navbar"
+        android:layout_marginTop="13.0dip" >
+
+        <EditText
+            android:id="@id/post_subject_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@null"
+            android:hint="请输入标题"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textColorHint="#ffb0b0b0"
+            android:textSize="17.0sp" />
+
+        <RelativeLayout
+            android:id="@id/post_threadtype_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_subject_input"
+            android:layout_marginTop="8.0dip"
+            android:visibility="gone" >
+
+            <View
+                android:id="@id/divider_1"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentTop="true"
+                android:background="#ffdcdcdc" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_1"
+                android:layout_marginTop="8.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip" >
+
+                <TextView
+                    android:id="@id/post_threadtype_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:text="请选择分类"
+                    android:textColor="#ffb0b0b0"
+                    android:textColorHint="#ffb0b0b0"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/all_arrow" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@id/divider_2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/post_threadtype_box"
+            android:layout_marginTop="8.0dip"
+            android:background="#ffdcdcdc" />
+
+        <EditText
+            android:id="@id/post_content_input"
+            android:layout_width="fill_parent"
+            android:layout_height="170.0dip"
+            android:layout_below="@id/divider_2"
+            android:layout_marginBottom="14.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请填写内容或上传图片"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="#ff000000"
+            android:textColorHint="#ffb0b0b0"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:id="@id/posttopic_getphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/divider_3"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/reply_fast_getphoto_selector" />
+
+        <View
+            android:id="@id/divider_3"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/post_content_input"
+            android:background="#ffdcdcdc" />
+
+        <RelativeLayout
+            android:id="@id/posttopic_fast_attach_controll_box"
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_below="@id/divider_3"
+            android:layout_marginTop="14.0dip"
+            android:padding="2.0dip"
+            android:visibility="gone" >
+
+            <Gallery
+                android:id="@id/posttopic_fast_attach_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:animationDuration="200"
+                android:spacing="3.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

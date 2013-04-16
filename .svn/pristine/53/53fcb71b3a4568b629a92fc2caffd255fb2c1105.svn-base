@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@id/blue"
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="#ff43b6e6" />
+
+    <RelativeLayout
+        android:id="@id/site_nav_box"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_below="@id/blue"
+        android:background="#ffffffff"
+        android:paddingRight="4.0dip" >
+
+        <ImageButton
+            android:id="@id/left_btn"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/back_btn_selector" />
+
+        <RelativeLayout
+            android:id="@id/header_click_area"
+            android:layout_width="180.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42.0dip"
+            android:layout_marginRight="42.0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@id/header_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:gravity="right"
+                    android:maxWidth="130.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@id/pull_down_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_toRightOf="@id/header_title"
+                    android:src="@drawable/pull_down_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@id/refresh_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_post_bg_selector"
+            android:src="@drawable/refresh_icon"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@id/more_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_post_bg_selector"
+            android:src="@drawable/more_icon"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@id/sendsms_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_post_bg_selector"
+            android:src="@drawable/post_icon"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/custom_btn"
+            android:layout_width="47.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_post_bg_selector"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip"
+            android:textColor="#ffb0b0b0"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/site_nav_box"
+        android:background="@drawable/search_line" />
+
+</RelativeLayout>

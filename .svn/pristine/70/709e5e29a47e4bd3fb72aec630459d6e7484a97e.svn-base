@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/siteview_more_login_box"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/site_navbar"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/RelativeLayout_textbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@id/siteview_more_login_username"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/iphone_more_bg_top"
+                android:hint="用户名/UID/Email"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ff545454"
+                android:textColorHint="#ffb6b6b6"
+                android:textSize="17.0sp" />
+
+            <EditText
+                android:id="@id/siteview_more_login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/siteview_more_login_username"
+                android:background="@drawable/iphone_more_bg_medium"
+                android:hint="请输入密码"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#ff545454"
+                android:textColorHint="#ffb6b6b6"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:id="@id/siteview_more_login_question"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/siteview_more_login_password"
+                android:layout_centerVertical="true"
+                android:background="@drawable/iphone_more_bg_bottom"
+                android:drawableRight="@drawable/all_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:text="安全提问(未设置请忽略)"
+                android:textColor="#ffb6b6b6"
+                android:textSize="17.0sp" />
+
+            <EditText
+                android:id="@id/siteview_more_login_answer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/siteview_more_login_question"
+                android:background="@drawable/iphone_more_bg_bottom"
+                android:hint="请输入安全提问答案"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:text=""
+                android:textColor="#ff545454"
+                android:textColorHint="#ffb6b6b6"
+                android:textSize="17.0sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayout_textbox"
+            android:layout_marginTop="18.0dip"
+            android:background="@drawable/button_login_bg_selector"
+            android:text="登  录"
+            android:textColor="#ffffffff"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@id/qqlogin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18.0dip"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:text="或使用QQ登录:"
+            android:textColor="#ff999999"
+            android:textSize="15.0sp" />
+
+        <RelativeLayout
+            android:id="@id/qq_login_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qqlogin_text"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/button_qq_login_bg_selector" >
+
+            <ImageView
+                android:id="@id/qq_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4.0dip"
+                android:layout_toLeftOf="@id/qq_login"
+                android:src="@drawable/qq_icon" />
+
+            <TextView
+                android:id="@id/qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="QQ帐号登录"
+                android:textColor="#ff006eb7"
+                android:textSize="17.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qq_login_box"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18.0dip"
+            android:drawablePadding="4.0dip"
+            android:drawableRight="@drawable/all_arrow"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:text="还没有注册?"
+            android:textColor="#ff999999"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<meta http-eqiv="cleartype" content="on"> 
+<title>DiscuzMobile</title>
+<script language="javascript">var DZ = window.DZ;</script>
+
+<script type="text/javascript" src="file:///android_asset/template/common/script.js"></script>
+<link rel="stylesheet" type="text/css" href="file:///android_asset/template/common/style.css" />
+</head>
+<body>
+<div class="body">
+<script type="text/javascript">
+	var showimage = false;
+	function shownextpage() {
+		var result = DZ.getHtmlResult();
+		document.getElementById("viewbox").innerHTML += result;
+	}
+	
+	function show_viewthread_node() {
+		var result = DZ.getHtmlResult();
+		document.getElementById("viewbox").innerHTML = result;
+	}
+	
+	function changenextpagetext(isShowNextPage) {
+		var nextpagebtn = document.getElementById("nextpagebtn");
+		var nextpagebtn_isrunning = document.getElementById("nextpagebtn_isrunning");
+		var nextpagebtn_error = document.getElementById("nextpagebtn_error");
+		if(isShowNextPage == "1") {
+			nextpagebtn.style.display = "block";
+			nextpagebtn_isrunning.style.display = "none";
+			nextpagebtn_error.style.display="none";
+			return;
+		} else if(isShowNextPage == "2") {
+			nextpagebtn.style.display = "none";
+			nextpagebtn_isrunning.style.display = "none";
+			nextpagebtn_error.style.display="block";
+		} else {
+			nextpagebtn.style.display = "none";
+			nextpagebtn_isrunning.style.display = "block";
+			nextpagebtn_error.style.display="none";
+			return;
+		}
+	}
+	
+	function replybypid(pid) {
+		if(showimage) {
+			showimage = false;
+			return;
+		}
+		DZ.ShowReplyByPid(pid);
+	}
+
+	//查看用户信息
+	function viewuserinfo(uid,username) {
+		DZ.showUserInfoPage(uid,username);
+	}
+</script>
+<div class="postlistbody">
+	<div id="threadsubject" >
+    	<div id="subjectbox"></div>
+    </div>
+</div>
+<div id="viewbox"></div>
+<div id="nextpagebtnbox" style="display:none;">
+	<p id="nextpagebtn" class="nextpagebtn_untouch" ontouchstart="javascript:this.className='nextpagebtn_touch';" ontouchend="javascript:this.className='nextpagebtn_untouch'" onClick="javascript:DZ.NextPage();changenextpagetext();">下一页</p>
+    <p id="nextpagebtn_isrunning" class="nextpagebtn_untouch" style="display:none;">正在读取..</p>
+    <p id="nextpagebtn_error" class="nextpagebtn_untouch" style="display:none;" ontouchstart="javascript:this.className='nextpagebtn_touch';" ontouchend="javascript:this.className='nextpagebtn_untouch'" onClick="javascript:DZ.ReloadNextPage();changenextpagetext();">发生错误.尝试刷新</p>
+</div>
+</div>
+</body>
+</html>

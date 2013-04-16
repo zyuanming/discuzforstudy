@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sitelist_info_view" android:background="@drawable/popup_bg_gray" android:paddingTop="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff444444" android:gravity="center" android:id="@id/sitelist_info_select_home" android:background="@drawable/sitelist_info_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="访问" android:drawableTop="@drawable/sitelist_info_home" style="@style/shadowText" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff444444" android:gravity="center" android:id="@id/sitelist_info_select_del" android:background="@drawable/sitelist_info_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:drawableTop="@drawable/sitelist_info_del" style="@style/shadowText" />
+</LinearLayout>

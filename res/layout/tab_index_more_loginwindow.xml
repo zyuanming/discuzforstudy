@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/siteview_more_login_box" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <include layout="@layout/header_box" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/qq_login_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/header_box" android:layout_alignRight="@id/username_box">
+        <TextView android:textColor="#ff333333" android:gravity="center" android:id="@id/qq_login" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="4.0dip" android:text="QQ登录" android:layout_toLeftOf="@id/qq_arrow" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/qq_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qq_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/username_box" android:background="@drawable/iphone_more_bg_top" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/qq_login_box">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="right|center" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="账号" />
+        <EditText android:textSize="16.0dip" android:textColorHint="#ff999999" android:id="@id/siteview_more_login_username" android:background="@null" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="" android:hint="用户名/UID/Email" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/password_box" android:background="@drawable/iphone_more_bg_medium" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/username_box">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="right|center" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="密码" />
+        <EditText android:textSize="16.0dip" android:textColorHint="#ff999999" android:id="@id/siteview_more_login_password" android:background="@null" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="" android:hint="请输入密码" android:password="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/question_box" android:background="@drawable/iphone_more_bg_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/password_box">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="right|center" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="安全提问" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@id/siteview_more_login_question" android:background="@drawable/selectlist" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="安全提问(未设置请忽略)" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/siteview_more_login_answer_linearlayout" android:background="@drawable/iphone_more_bg_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/question_box">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="right|center" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="答案" />
+        <EditText android:textSize="16.0dip" android:textColorHint="#ff999999" android:id="@id/siteview_more_login_answer" android:background="@null" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="" android:hint="请输入安全提问答案" />
+    </LinearLayout>
+    <Button android:textSize="24.0sp" android:id="@id/register" android:background="@drawable/button_register_bg_selector" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="注  册" android:layout_below="@id/question_box" android:layout_alignLeft="@id/question_box" />
+    <Button android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/login" android:background="@drawable/button_login_bg_selector" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="登  录" android:layout_below="@id/question_box" android:layout_alignRight="@id/question_box" />
+</RelativeLayout>

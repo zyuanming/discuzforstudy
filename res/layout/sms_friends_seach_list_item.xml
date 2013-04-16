@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sms_new_message" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sms_friends_list_item_photo" android:padding="10.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" src="@drawable/icon" />
+    <ImageView android:id="@id/sms_friends_list_item_select" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" src="@drawable/btn_check_off" />
+    <TextView android:textSize="17.0dip" android:textColor="#ff333333" android:id="@id/sms_friends_list_item_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="用户名" android:layout_toLeftOf="@id/sms_friends_list_item_select" android:layout_toRightOf="@id/sms_friends_list_item_photo" android:layout_centerVertical="true" />
+</RelativeLayout>

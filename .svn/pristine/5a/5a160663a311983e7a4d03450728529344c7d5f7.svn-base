@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff447ac2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/searchmore_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@id/searchmoreicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/searchmoreicon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_toRightOf="@id/searchmoreicon"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip" >
+
+            <TextView
+                android:id="@id/searchmore_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="输入关键字"
+                android:textColor="#ff000000"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@id/searchmore_sub_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="通过云平台搜索"
+                android:textColor="#ff666666"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

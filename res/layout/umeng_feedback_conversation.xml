@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="#ff565656" android:gravity="center" android:layout_gravity="center" android:id="@id/umeng_feedback_conversation_title" android:background="@drawable/umeng_feedback_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="反馈问题" />
+    <com.umeng.fb.ui.ThreadView android:layout_gravity="top" android:id="@*android:id/list" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#ffeeeeee" android:divider="#ffefefef" android:layout_weight="1.0" />
+    <View android:background="#ffd5d5d5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="#ffc6c6c6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/umeng_feedback_bottom_sub" android:background="@drawable/umeng_feedback_bottom_banner" android:paddingTop="5.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/umeng_feedback_editTxtFb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxLines="2" android:layout_toLeftOf="@id/umeng_feedback_btnSendFb" android:layout_alignParentLeft="true" />
+        <Button android:textColor="#ffffffff" android:id="@id/umeng_feedback_btnSendFb" android:background="@drawable/umeng_feedback_submit_selector" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:text="Submit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

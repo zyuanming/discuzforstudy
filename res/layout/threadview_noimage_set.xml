@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat"
+    android:orientation="vertical" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="7.0dip" >
+
+        <RelativeLayout
+            android:id="@id/threadview_image"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/iphone_more_bg_top"
+            android:focusable="true" >
+
+            <TextView
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:text="关(OFF)"
+                android:textColor="#ff333333"
+                android:textSize="18.0dip" />
+
+            <ImageView
+                android:id="@id/threadview_image_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/icon_toast_success"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/threadview_noimage"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/iphone_more_bg_bottom"
+            android:focusable="true" >
+
+            <TextView
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:text="开(ON)"
+                android:textColor="#ff333333"
+                android:textSize="18.0dip" />
+
+            <ImageView
+                android:id="@id/threadview_noimage_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/icon_toast_success"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/siteview_more_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="浏览帖子时是否显示图片."
+                android:textColor="#ffcccccc"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

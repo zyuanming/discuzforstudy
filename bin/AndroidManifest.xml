@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.discuz"
+    android:versionCode="24"
+    android:versionName="@string/version_name" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:name="net.discuz.app.DiscuzApp"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/appname" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/appname"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/appname"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.SiteViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.MyFavActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.MyThreadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.MyMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sitelist.sitelist"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sitelist.sitesearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sitelist.SiteSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.Vscode"
+            android:screenOrientation="portrait"
+            android:theme="@style/popup_gray_style" />
+        <activity android:name=".activity.siteview.siteview_load" />
+        <activity
+            android:name=".activity.siteview.siteview_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_forumindex"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_sendpost"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.siteview.siteview_sendpost_addtext"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.siteview.PostThreadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.siteview.uploadFileList"
+            android:screenOrientation="portrait"
+            android:theme="@style/popup_gray_style" />
+        <activity
+            android:name=".activity.siteview.siteview_viewthread"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.siteview.siteview_forumviewthread_post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.SmsNewMessage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".source.view.pulltorefresh" />
+        <activity
+            android:name=".source.QRCodes.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.siteview.siteview_forumdisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.ForumViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_forumsubdisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_forumviewthread"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_forumsmsdisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_setsystem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.siteview_sendpost_audio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.noticecenterlist_new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.smsshow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.siteview.noticedetaillist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.msgcenter.MsgCenterIndex"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.msgcenter.MsgCenterSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.msgcenter.MsgDisplay"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="net.discuz.source.service.DownLoadService"
+            android:enabled="true" />
+        <service
+            android:name="net.discuz.source.service.HttpConnService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="Discuz.HttpConnService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".boardcast.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f557a895270150cdd00001a" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="" />
+
+        <activity
+            android:name="com.umeng.fb.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard" />
+    </application>
+
+</manifest>

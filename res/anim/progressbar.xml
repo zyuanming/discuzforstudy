@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="20" android:drawable="@drawable/reload_1" />
+    <item android:duration="20" android:drawable="@drawable/reload_2" />
+    <item android:duration="20" android:drawable="@drawable/reload_3" />
+    <item android:duration="20" android:drawable="@drawable/reload_4" />
+    <item android:duration="20" android:drawable="@drawable/reload_5" />
+    <item android:duration="20" android:drawable="@drawable/reload_6" />
+    <item android:duration="20" android:drawable="@drawable/reload_7" />
+    <item android:duration="20" android:drawable="@drawable/reload_8" />
+    <item android:duration="20" android:drawable="@drawable/reload_9" />
+    <item android:duration="20" android:drawable="@drawable/reload_10" />
+    <item android:duration="20" android:drawable="@drawable/reload_11" />
+    <item android:duration="20" android:drawable="@drawable/reload_12" />
+    <item android:duration="20" android:drawable="@drawable/reload_13" />
+    <item android:duration="20" android:drawable="@drawable/reload_14" />
+    <item android:duration="20" android:drawable="@drawable/reload_15" />
+    <item android:duration="20" android:drawable="@drawable/reload_16" />
+    <item android:duration="20" android:drawable="@drawable/reload_17" />
+    <item android:duration="20" android:drawable="@drawable/reload_18" />
+    <item android:duration="20" android:drawable="@drawable/reload_19" />
+</animation-list>

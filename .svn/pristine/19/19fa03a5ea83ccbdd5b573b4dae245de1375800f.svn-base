@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/set_list_item_tile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统设置" />
+    <TextView android:id="@id/set_list_item_information" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前设置" android:layout_below="@id/set_list_item_tile" android:layout_centerVertical="true" style="@style/systemWorldStyle" />
+    <ImageView android:id="@id/set_list_item_Image" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_check_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

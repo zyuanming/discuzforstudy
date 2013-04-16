@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/notice_detail_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="44.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView android:id="@id/sitedetail_siteicon" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_nosite" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/sitedetail_siteicon">
+                <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff515151" android:gravity="left" android:id="@id/detail_item_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="subject" android:maxLines="1" style="@style/shadowText" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="28.0dip">
+                    <TextView android:textSize="12.0dip" android:textColor="#ff24a8d4" android:gravity="left" android:id="@id/detail_item_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送者:" android:maxLines="1" style="@style/shadowText" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ff646464" android:id="@id/detail_item_dateline" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日期:" android:maxLines="1" android:layout_alignParentRight="true" style="@style/shadowText" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textColor="#ffa6a6a6" android:gravity="left" android:id="@id/detail_item_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="message" style="@style/shadowText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

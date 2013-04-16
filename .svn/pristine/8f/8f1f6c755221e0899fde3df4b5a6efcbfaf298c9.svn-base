@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/listview_item_unselect" android:paddingLeft="4.0dip" android:paddingTop="10.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sms_photo" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/user_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/sms_username_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/sms_photo" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/listview_item_description_unselect" android:id="@id/sms_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好友名及消息数" />
+    </LinearLayout>
+    <TextView android:textSize="11.0dip" android:textColor="@color/listview_item_description_unselect" android:id="@id/sms_smstime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信息时间" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/listview_item_description_unselect" android:id="@id/sms_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信息内容..." android:layout_toRightOf="@id/sms_photo" android:layout_below="@id/sms_username_box" android:layout_alignParentRight="true" />
+</RelativeLayout>

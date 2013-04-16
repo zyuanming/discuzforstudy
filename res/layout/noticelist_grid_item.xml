@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/noticelist_grid_item" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/noticelist_grid_item_top" android:focusable="true" android:layout_width="150.0dip" android:layout_height="37.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+        <RelativeLayout android:background="@drawable/noticelist_grid_bg" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/noticelist_grid_item_site_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="站点名称" android:layout_toRightOf="@id/group_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/noticelist_delete_site" android:background="@drawable/delete_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:focusable="true" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_below="@id/noticelist_grid_item_top" android:layout_centerVertical="true">
+        <LinearLayout android:id="@id/noticelist_grid_item_pm" android:background="@drawable/noticelist_grid_item_pm_seletor" android:layout_width="72.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ffdd0000" android:id="@id/noticelist_grid_item_pm_text" android:paddingLeft="37.0dip" android:paddingTop="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/noticelist_grid_item_am" android:background="@drawable/noticelist_grid_item_am_seletor" android:layout_width="78.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/noticelist_grid_item_pm">
+            <TextView android:textSize="15.0dip" android:textColor="#ffdd0000" android:id="@id/noticelist_grid_item_am_text" android:paddingLeft="30.0dip" android:paddingTop="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="99" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

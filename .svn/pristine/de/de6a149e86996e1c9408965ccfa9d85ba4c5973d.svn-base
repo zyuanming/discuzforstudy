@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="shadowText">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="shadowText_black">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="shadowText_black_bottom" parent="@style/shadowText_black">
+        <item name="android:shadowDy">1.0</item>
+    </style>
+    <style name="shadowText_black_bottom_big" parent="@style/shadowText_black">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="shadowText_gray" parent="@style/shadowText_black">
+        <item name="android:shadowColor">#ff666666</item>
+    </style>
+    <style name="popup_white_style" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="about_text">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.1</item>
+    </style>
+    <style name="popup_style" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:color">#ffefefef</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="popup_gray_style" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/popup_bg_gray</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:color">#ffefefef</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="popup_btn">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/popup_btn_transparent_selector</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="popup_btn_white">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/popup_btn_white_selector</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="popup_btn_iphone">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/popup_iphone_btn_selector</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="MenuAnimation" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_exit</item>
+    </style>
+    <style name="LoadingPopupAnimation" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+    <style name="LoadingPopupCircleAnimation">
+        <item name="android:maxWidth">26.0dip</item>
+        <item name="android:maxHeight">27.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/loading_big</item>
+        <item name="android:minWidth">26.0dip</item>
+        <item name="android:minHeight">27.0dip</item>
+    </style>
+    <style name="LoadingPopupCircleAnimationSmall">
+        <item name="android:maxWidth">14.0dip</item>
+        <item name="android:maxHeight">14.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/loading_small</item>
+        <item name="android:minWidth">14.0dip</item>
+        <item name="android:minHeight">14.0dip</item>
+    </style>
+    <style name="ImagePopupAnimation" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/image_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/image_popup_out</item>
+    </style>
+    <style name="DefaultActivityAnimation" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/activity_style_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_style_out</item>
+    </style>
+    <style name="serviceText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:shadowColor">#ffffffff</item>
+    </style>
+    <style name="discuzprogressBar" parent="@*android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@anim/progressbar</item>
+    </style>
+    <style name="systemWorldStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TabBtn">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@drawable/tab_btn_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ResizableDialogTheme" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+</resources>

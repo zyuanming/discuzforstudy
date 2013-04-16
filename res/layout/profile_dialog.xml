@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_repeat"
+    android:orientation="vertical" >
+
+    <net.discuz.source.widget.SiteNavbar
+        android:id="@id/site_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/site_navbar"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@id/user_base_profile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="2.0dip"
+                android:paddingRight="2.0dip"
+                android:paddingTop="2.0dip" >
+
+                <ImageView
+                    android:id="@id/tab_index_more_profile_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user_icon" />
+
+                <TextView
+                    android:id="@id/tab_index_more_profile_username_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_index_more_profile_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15.0dip"
+                    android:textColor="#ff0ca0c5"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/iphone_more_bg_top"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="70.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center"
+                        android:text="用户组"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@id/tab_index_more_profile_grouptitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ff2e7099"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/iphone_more_bg_medium"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="70.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center"
+                        android:text="注册时间"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@id/tab_index_more_profile_regdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ff2e7099"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/iphone_more_bg_medium"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="70.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center"
+                        android:text="在线时间"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@id/tab_index_more_profile_oltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ff2e7099"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/iphone_more_bg_medium"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="70.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center"
+                        android:text="最后访问"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@id/tab_index_more_profile_lastactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ff2e7099"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/iphone_more_bg_bottom"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:layout_width="70.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left|center"
+                        android:text="上次发表"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0dip" />
+
+                    <TextView
+                        android:id="@id/tab_index_more_profile_lastpost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ff2e7099"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/tab_index_more_profile_other"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginTop="20.0dip"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginBottom="30.0dip"
+                android:background="@drawable/logout_btn_selector"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

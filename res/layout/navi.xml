@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/invitation_layout" android:background="@drawable/tabbar_btn_bg_selector" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/searchIcon" android:background="@drawable/tabbar_icon_thread_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@drawable/tabbar_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_introduction_tv" style="@style/shadowText_black_bottom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fid_layout" android:background="@drawable/tabbar_btn_bg_selector" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/rankingIcon" android:background="@drawable/tabbar_icon_forumdisplay_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@drawable/tabbar_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_my_tv" style="@style/shadowText_black_bottom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/message_layout" android:background="@drawable/tabbar_btn_bg_selector" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/favouriteIcon" android:background="@drawable/tabbar_icon_message_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@drawable/tabbar_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_message_tv" style="@style/shadowText_black_bottom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_layout" android:background="@drawable/tabbar_btn_bg_selector" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/moreIcon" android:background="@drawable/tabbar_icon_more_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@drawable/tabbar_textcolor_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_more_tv" style="@style/shadowText_black_bottom" />
+    </LinearLayout>
+</LinearLayout>

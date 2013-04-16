@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sms_photo" android:background="@drawable/photo_bg" android:padding="2.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/user_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/sms_information" android:background="@drawable/sms_item_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="215.0dip" android:text="信息内容..." android:layout_toLeftOf="@id/sms_photo" />
+    <TextView android:textSize="11.0dip" android:textColor="#ffbebebd" android:id="@id/sms_smstime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="10.0dip" android:text="2012-12-5 08:35" android:layout_toLeftOf="@id/sms_photo" android:layout_below="@id/sms_information" />
+</RelativeLayout>

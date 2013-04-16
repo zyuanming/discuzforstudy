@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="11.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53.329987dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/button_forum_bg_selector"
+        android:paddingRight="35.0dip"
+        android:paddingTop="11.5dip" >
+
+        <TextView
+            android:id="@id/today_posts_title"
+            android:layout_width="33.329987dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="今日"
+            android:textColor="#fffbfbfb"
+            android:textSize="9.0sp" />
+
+        <TextView
+            android:id="@id/today_posts_count"
+            android:layout_width="33.329987dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/today_posts_title"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_horizontal"
+            android:textColor="#fffbfbfb"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/forum_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14.669983dip"
+            android:layout_toRightOf="@id/today_posts_title"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

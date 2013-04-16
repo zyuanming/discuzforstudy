@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sms_photo" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/user_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff535353" android:id="@id/sms_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好友名及消息数" android:layout_toRightOf="@id/sms_photo" />
+    <TextView android:textSize="14.0dip" android:textColor="@drawable/listview_item_textcolor_description_selector" android:gravity="center" android:id="@id/sms_num" android:layout_width="26.0dip" android:layout_height="21.0dip" android:layout_marginRight="8.0dip" android:text="999" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffa1a1a1" android:id="@id/sms_information" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="信息内容息内息内息内息内息内息内息内息内息内息内..." android:singleLine="true" android:layout_toRightOf="@id/sms_photo" android:layout_below="@id/sms_username" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffa1a1a1" android:id="@id/sms_smstime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:text="2012-12-12" android:layout_below="@id/sms_num" android:layout_alignParentRight="true" />
+</RelativeLayout>

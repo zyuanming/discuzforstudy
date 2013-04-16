@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="MobileOptimized" content="320" />
+<title>Discuz!璁哄</title>
+<style>
+	*{word-wrap: break-word;}
+	H1,H2,H3,H4,DT,DD,P{ margin:0; padding:0;}
+	UL, LI { list-style:none; margin:0; padding:0;}
+	a,a:link,a:active,a:visited,a:hover{ text-decoration:none;}
+	.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .cl { zoom: 1; }
+	.z { float:left;}
+	.y {float:right;}
+	.xg1 { color: #999; }
+	
+	.xs6 { font-size: 60%;}
+	.xs7 { font-size: 70%;}
+	.xs8 { font-size: 80%; }
+	.xs9 { font-size: 90%; }
+	.xs0 { font-size: 100%; }
+	.xs1 { font-size: 110%; }
+	.xs2 { font-size: 120%; }
+	body{ margin:0; padding:0; padding-bottom:40px; -webkit-tap-highlight-color:rgba(0,0,0,0);  background: #6a8eb6; font-size: 100%}
+	
+	.shadowtext {text-shadow: 0px 1px 1px #fff;}
+	.shadowtext_black {text-shadow: 0px -1px 1px #000000;}
+	.shadowtext_black_bottom { text-shadow:0px 2px 1px #000000;}
+	
+	.radius_border {-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px;}
+	
+	.txt { border: 1px #dedbde solid; font-size:100%; width: 94%; -webkit-box-shadow: 0px 0px 5px #efefef inset; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px;}
+	.button{ margin-bottom: 4px; border: 1px #6e90b1 solid; padding: 12px 0; background: -webkit-gradient(linear, 0 0, 0 100%, from(#93b3d2), to(#84a6c6)); display:inline-block; width:99%; color: #FFF; font-size: 110%; text-align:center; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; -webkit-box-shadow: 2px 2px 4px #cccccc; }
+	.button_touch { background: -webkit-gradient(linear, 0 0, 0 100%, from(#9cc36b), to(#de7d10)); border: 1px #9cc36b solid; -webkit-box-shadow: none;}
+	
+	.touchhover_bg {-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; color:#FFFFFF; background: -webkit-gradient(linear, 0 0, 0 100%, from(#de7d10), to(#ffae21)); text-shadow: 0px 1px 1px #fff;}
+	
+	.loading { padding: 30px; line-height: 32px; text-align: center; color:#4c5e6e; }
+	
+	.body { padding: 4px 8px; }
+
+	.multipage { margin-bottom:4px;  text-align: right; }
+	.multipage a, .multipage strong { display: inline-block; }
+	.multipage .pagenum { color: #999;}
+	.multipage a { margin: 6px 5px; padding: 10px; background: #76abe1; font-size: 90%; color:#FFF;  -webkit-border-top-left-radius: 6px;-webkit-border-top-right-radius: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;  }
+	.multipage strong a{ background: #fd7b28; color: #FFF;}
+	.multipage a:hover{ background: #666; color: #FFF;}
+	.multipage .textnext { margin: 6px 0px; background: #84a6c6; font-size: 90%; -webkit-border-top-left-radius: 6px;-webkit-border-top-right-radius: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+	.multipage .textnext_hasprev { margin: 6px 0px; background: #84a6c6; font-size: 90%;  border-left: 1px #95b3ce solid; -webkit-border-top-left-radius: 0px;-webkit-border-top-right-radius: 6px; -webkit-border-bottom-left-radius: 0px; -webkit-border-bottom-right-radius: 6px; }
+	.multipage .textprev { margin: 6px 0px; background: #84a6c6; font-size: 90%; border-right: 1px #6c91b4 solid; -webkit-border-top-left-radius: 6px;-webkit-border-top-right-radius: 0px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 0px; }
+	.multipage .textnext:hover, .multipage .textnext_hasprev:hover, .multipage .textprev:hover { background: #666;}
+				
+	.memberbar{ margin-bottom: 8px; padding-left:70px; padding-top: 3px; min-height: 70px; color: #FFFFFF;}
+		.memberbar .avatar { position:absolute; margin-left: -70px; }
+			.memberbar .avatar img{ padding: 6px; max-height: 70px; background: #5d7ca0;  }
+		.memberbar .profile { margin-left: 8px; padding: 4px; height:63px; line-height: 20px;  background: #ececef; color:#444; font-size: 0.9em;}
+		.memberbar .profile .user { color:#365103; }
+		.memberbar .profile .group {color:#444;}
+				
+	/*catlist*/
+	.cat { margin-top: 1px;}
+	.catlist { background: #ececef; margin-bottom: 10px;  padding-left: 4px; padding-right: 4px;}
+		.catlist .cattitle {  padding-left: 6px; height: 40px; line-height:40px; color:#4c5e6e; text-align: right; font-size: 110%; border-bottom: 1px #d5d5d5 solid; }
+	.forumlist {}
+	.forumlist UL { margin-bottom: -1px; }
+	.forumlist UL LI { padding:10px 6px; border-top: 1px #FFF solid; border-bottom: 1px #d5d5d5 solid; min-height: 30px; }
+	.forumlist UL LI:last-child { border-bottom: none; }
+	.forumlist UL LI a{ display: block;}
+	.forumlist UL LI a .forumname { line-height:24px; font-size: 110%; color: #4c5e6e;}
+	
+	.forumlist UL LI .threadnum{ color: #666; font-size: 75%; text-align: right; }
+	
+		.forumlist UL LI .forumname .todayposts { color: #fd7b28; font-size: 80%;}
+	.forumlist UL LI .forumlink:link { text-decoration:none; display: block; }
+	
+	/*threadlist*/
+	
+	.threadlist { margin-bottom: 4px; padding-left:8px; padding-right:8px; background: #ececef; }
+	.threadlist_forumname { color:#4c5e6e; height:40px; line-height:40px; font-size:110%;border-bottom: 1px #d5d5d5 solid; }
+		.threadlist .threadlist_threads { font-size: 80%; color:#999999; }
+		.threadlist UL LI { padding: 9px 0 9px 4px; border-top: 1px #FFF solid; border-bottom: 1px #d5d5d5 solid;}
+		.threadlist UL LI:last-child { border-bottom: none; }
+		.threadlist UL LI .dateline{ font-size: 60%; color: #999999;}
+		.threadlist UL LI .author { color: #666; font-size: 70%;}
+		.threadlist UL LI .subject { padding: 4px 0; font-size: 100%; color: #4c5e6e;}
+		.threadlist UL LI .replies{ color: #84a6c6;}
+		.threadlist UL LI .views{ color: #666; font-size: 70%; }
+		.threadlist UL LI a{ color:#000000; display: block;}
+		
+	
+	.sublist { margin-bottom: 4px; background: #ececef; padding: 6px;}
+	.sublist .sublisttitle { padding: 8px; border-bottom: 1px #d5d5d5 solid; color:#4c5e6e; text-align: right;  }
+		.sublist UL LI { padding: 10px; border-top: 1px #FFF solid; border-bottom: 1px #d5d5d5 solid; }
+		.sublist UL LI a{ color: #4c5e6e;}
+		.sublist UL LI:last-child { border-bottom: none; }
+		.sublist .subforumlink{ display: block; }
+		.sublist .threadnum { color: #999999; font-size: 75%; float: right;}
+	/*postlist*/
+	.postlistbody {margin: 1px 0 8px 0px;}
+	
+	.postlistbody #threadsubject { padding: 8px;-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; background: #ececef; font-size: 110%; color: #333;}
+	.postlist {}
+	.postlist .postsubject { padding: 8px 3px; border-bottom: 1px #d5d5d5 dashed; font-size: 110%; color: #333;}
+	
+	.postlist .postnode { padding: 4px 6px; margin-bottom: 8px; background: #ececef; -webkit-border-top-left-radius: 8px; 
+						-webkit-border-top-right-radius: 8px;  -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; }
+	.postlist .first {-webkit-border-top-left-radius: 0px; -webkit-border-top-right-radius: 0px;}
+	.postlist .postnode .author { padding: 3px; border-bottom: 1px #999999 solid; border-bottom: 1px #d5d5d5 solid; font-size: 100%;}
+		.postnode .author .avatar img { padding: 2px; background: #FFF;}
+		.postnode .author .profile { margin-left: 2px; padding: 2px; line-height: 18px; font-size: 90%; }
+		.postnode .postno{ line-height: 32px; font-size: 90%; }
+	.postlist .postnode .message { padding: 4px 4px 6px 4px; background: #efefef; font-size: 100%; border-top: 1px #FFF solid; }
+	.postlist .postnode .message img{ max-width: 280px;}
+
+	.postlist .postnode .postnodeimagebox { display:inline-block; margin-top: 2px; }
+	.postlist .postnode .postnodeimage { padding: 3px; background: #FFF url("file:///android_asset/images/sitestyle/loading_image.gif") 50% 50% no-repeat; border: 1px #e4e4e4 solid; -webkit-border-top-left-radius: 5px; 
+						-webkit-border-top-right-radius: 5px;  -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; }
+	.postlist .postnode .downloadfile { margin: 3px 0; padding: 7px 5px; border: 1px #e4e4e4 solid; background: #fff; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;  -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; color:#84a6c6;}
+	.postlist .postnode .pstatus{ font-style: normal; font-size: 80%; color: #999; }
+	.postlist .postnode .lock { padding:4px; text-align: center; color: #999; }
+		.postlist .postnode .attachmentlist {padding: 3px 5px;}
+			.postlist .postnode .attachmentlist .attachtitle { border-bottom: 1px #ddd dashed; padding-bottom:2px; color: #FF5500; }
+			.postlist .postnode .downloadfile .attachdesc { color: #999; font-size: 80%;}
+	
+	.showmessage { margin-top: 50px; padding: 20px;  background: #FFF; }
+	.showmessage p { margin: 10px; font-size: 100%; }
+	.showmessage .messagebody { font-size: 110%; }
+	.showmessage .title { margin: 10px; padding-bottom: 10px; border-bottom: 1px #eeeeee dashed; font-size: 110%;  color:#555555; }
+	.showmessage_btn { border: 1px #6e90b1 solid; padding: 5px 0; background: -webkit-gradient(linear, 0 0, 0 100%, from(#93b3d2), to(#84a6c6)); display: block; color: #FFF; font-size: 110%; text-align:center; }
+	
+	.postbox{ background: #FFF; padding: 8px; }
+	.postbox .postsubject, .postbox .postmessage{ margin: 5px auto; }
+	.postbox .postsubject .title, .postbox .otherform .title, .postbox .postmessage .title{ font-size: 110%; color: #333333;}
+	.postbox .postsubject .formsubject { padding: 8px;  }
+	.postbox .postmessage .formmessage{ padding: 8px; min-height: 200px; }
+	
+	.postbox .btn { margin-top: 6px; }
+	
+	.postbox .upload { display: inline-block; padding: 11px; background:#4c5e6e; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; color:#FFF; font-size:90%;}
+	.postbox .attachresult { padding: 12px; background: #4c5e6e; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; font-size: 110%; color:#FFF;}
+	
+	.space_profile { padding:10px; color: #4c5e6e; text-align:center; }
+		.space_profile .avatar{ display: inline-block; margin: 0 auto; padding: 4px; width:128px; height: 128px; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; }
+		.space_profile .avatar img{ -webkit-box-shadow: 0px 0px 10px #213c52;}
+		.space_profile .profilelist {  margin: 10px auto; padding:-1px 5px; width: 90%; background: #ececef; text-align: left; }
+			.space_profile .profilelist UL LI { margin: 0 8px; padding: 12px; border-top:1px #FFF solid; border-bottom: 1px #d5d5d5 solid; }
+			.space_profile .profilelist UL LI:first-of-type { border-top: none;}
+			.space_profile .profilelist UL LI:last-child { border-bottom: none;}
+			
+	.sitewarning { margin: 30px; padding: 20px; background: #ececef; -webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px; -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px; line-height: 30px; font-size: 100%; color: #666666; }
+		.sitewarning .msg { margin-bottom: 4px;}
+</style>
+<style type="text/css">
+	.button { font-size: 90%; }
+</style>
+</head>
+<body>
+<div class="body">
+<div class="threadlist radius_border">
+	<div class="loading">
+        	<p>姝ｅㄨ?诲璇风??</p>
+            <p><img src="file:///android_asset/images/sitestyle/loading_template.gif" ></p>
+    </div>
+</div>
+</div>
+</body></html>

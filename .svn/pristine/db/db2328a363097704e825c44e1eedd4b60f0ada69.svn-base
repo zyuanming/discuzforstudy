@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/DiscuzActivityBox" android:background="@drawable/download_manager_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="17.0dip" android:textColor="#ff6baade" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/download_list_title" android:layout_alignParentLeft="true" style="@style/shadowText" />
+                <Button android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/downLoad_btn_back" android:background="@drawable/close_gray_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" style="@style/shadowText_black" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ListView android:id="@id/downLoadList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/list_line" android:dividerHeight="1.0px" android:footerDividersEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

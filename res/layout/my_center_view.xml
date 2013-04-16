@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/DiscuzActivityBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@id/user_base_profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49.0dip" >
+
+        <ImageView
+            android:id="@id/user_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_icon" />
+
+        <TextView
+            android:id="@id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:text="Large Text"
+            android:textColor="#ff0ca0c5"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_base_profile_layout"
+        android:layout_marginTop="42.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:id="@id/my_fav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/my_center_btn_bg_selector"
+            android:gravity="center"
+            android:text="我的收藏"
+            android:textColor="#ff727272"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/my_thread_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/my_center_btn_bg_selector"
+            android:gravity="center"
+            android:text="我的主题"
+            android:textColor="#ff727272"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/my_msg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/my_fav_btn"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/my_center_btn_bg_selector"
+            android:gravity="center"
+            android:text="我的消息"
+            android:textColor="#ff727272"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/my_msg_btn"
+            android:layout_alignTop="@id/my_msg_btn"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="22.0dip"
+            android:src="@drawable/red_point"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/my_thread_btn"
+            android:layout_marginTop="14.0dip"
+            android:background="@drawable/my_center_btn_bg_selector"
+            android:gravity="center"
+            android:text="体验反馈"
+            android:textColor="#ff727272"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

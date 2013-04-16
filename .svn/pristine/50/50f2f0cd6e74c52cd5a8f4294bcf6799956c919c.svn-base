@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/circle_small_01" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_02" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_03" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_04" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_05" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_06" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_07" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_08" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_09" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_10" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_11" />
+    <item android:duration="50" android:drawable="@drawable/circle_small_12" />
+</animation-list>

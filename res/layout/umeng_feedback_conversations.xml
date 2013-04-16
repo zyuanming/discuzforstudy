@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_bg_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/umeng_feedback_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="22.0dip" android:textColor="#ff565656" android:id="@id/umeng_feedback_um_feedbacklist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="我的反馈" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/umeng_feedback_imgBtn_submitFb" android:background="@drawable/umeng_feedback_write_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@*android:id/list" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/umeng_feedback_blank_selector" android:cacheColorHint="#ffe9e9e9" android:divider="#ffe9e9e9" android:dividerHeight="0.0dip" />
+</LinearLayout>

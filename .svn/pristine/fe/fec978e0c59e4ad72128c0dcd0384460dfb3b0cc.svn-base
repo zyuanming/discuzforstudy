@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DiscuzActivityBox" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <include layout="@layout/header_box" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/displayListLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/display_bottom" android:layout_below="@id/header_box" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/display_bottom" android:background="@drawable/reply_main_bg" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/favorite_box" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/favorite_childfid" android:background="@drawable/icon_favorite_nofav" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:background="@drawable/reply_main_spanline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/favorite_box" android:layout_alignParentTop="true">
+            <EditText android:textSize="16.0dip" android:textColor="#ff666666" android:id="@id/siteview_title_newthread_theme" android:background="@drawable/reply_fast_input_bg" android:paddingLeft="8.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:hint="发新主题" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

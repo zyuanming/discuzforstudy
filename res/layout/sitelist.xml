@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/DiscuzActivityBox" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:deezapps="http://schemas.android.com/apk/res/net.discuz">
+    <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/sitelist_sub_url_layout" android:background="@drawable/header_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/sitelist_qrcodes" android:layout_alignParentLeft="true">
+                <Button android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/favsite_back" android:background="@drawable/button_back_bg_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="返回" style="@style/shadowText_black" />
+            </LinearLayout>
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxWidth="170.0dip" android:text="访问站点" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/shadowText_black_bottom" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sitelist_qrcodes" android:background="@drawable/button_done_bg_selector" android:padding="4.0dip" android:clickable="true" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="4.0dip" android:layout_alignParentRight="true">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_qr" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/msg_center_entry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header_box">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通知中心" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/sitelist_url" android:background="@drawable/sitelist_search_input_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:layout_below="@id/header_box">
+        <ImageView android:layout_gravity="center" android:background="@drawable/sitelist_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:gravity="left|center" android:paddingLeft="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/seach_input_url_keyword_text" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sitelist_url">
+        <ListView android:id="@id/sitelist_favorite_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@null" android:layout_below="@id/header_box" />
+    </RelativeLayout>
+</RelativeLayout>

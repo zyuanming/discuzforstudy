@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DiscuzActivityBox" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/header_box" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <include layout="@layout/header_box" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/sitelist_cloud_relative" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_box">
+        <net.discuz.source.widget.DWebView android:id="@id/discuzwebview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

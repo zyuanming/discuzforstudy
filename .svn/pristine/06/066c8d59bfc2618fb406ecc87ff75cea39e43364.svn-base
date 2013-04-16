@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/text_box"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:background="#ff8ecfff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_bg_postdraft_selector"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="一个草稿项"
+            android:textColor="#ff333333"
+            android:textSize="16.0dip" />
+    </LinearLayout>
+
+</LinearLayout>
